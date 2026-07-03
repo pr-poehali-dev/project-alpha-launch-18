@@ -7,34 +7,34 @@ import SmoothScrollHero from "@/components/ui/smooth-scroll-hero"
 
 export default function Index() {
   const missionStatement =
-    "В Stride Collective мы верим: движение — это не просто выбор, это образ жизни. Рожденные из духа бегового сообщества, мы объединяем бегунов со всего мира, которых связывает страсть к преодолению границ. Бежишь ли ты навстречу рассвету по городским улицам или покоряешь горные тропы — мы здесь, чтобы вдохновлять тебя. Наше сообщество живет ритмом шагов, силой упорства и радостью общих побед. Присоединяйся к нам — беги не только ради формы, но ради свободы, дружбы и чистой любви к движению."
+    "«Вертикаль» — команда сертифицированных промышленных альпинистов, для которых высота — это работа, а безопасность — закон. Мы выполняем весь спектр высотных работ для строительных компаний, управляющих зданиями и частных клиентов: от мойки фасадов и остекления до монтажа, ремонта и герметизации. Наши специалисты имеют допуски и многолетний опыт, а каждый объект застрахован. Мы работаем там, где не пройдёт вышка и не встанут леса — быстро, аккуратно и без остановки жизни здания. Доверьте высоту профессионалам, которые знают её изнутри."
 
   const timelineEntries = [
     {
       id: 1,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RJ3iTXUn5SUexF6nHMZYhMoQLNCboK.png",
-      alt: "Бегунья в художественном размытии движения",
-      title: "Каждый шаг важен",
+      image: "https://cdn.poehali.dev/projects/bb3ad2f0-a972-414c-8c08-5d3f3419bb91/files/9ff9c18f-aed7-492c-be1e-f1aa4b754b29.jpg",
+      alt: "Мойка фасадов и остекления на высоте",
+      title: "Мойка фасадов и окон",
       description:
-        "От первой пробежки вокруг дома до сотого марафона — у каждого бегуна своя история. В Stride Collective мы чествуем новичков, которые впервые шнуруют кроссовки. Твой темп не важен — важна твоя страсть. Чего ты ждешь?",
+        "Профессиональная мойка остекления, витражей и фасадов любой этажности. Убираем грязь, известковый налёт и следы после стройки. Возвращаем зданию идеальный вид без вышек и лесов. Стоимость от 30 ₽/м².",
       layout: "left" as const,
     },
     {
       id: 2,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-LN9OPh9hw0b9rwSPRSslHoejcfoKHe.png",
-      alt: "Бегун с решимостью и концентрацией",
-      title: "Найди свой ритм",
+      image: "https://cdn.poehali.dev/projects/bb3ad2f0-a972-414c-8c08-5d3f3419bb91/files/5678f2e3-1be7-4fce-b1a1-c94fcaf11b1e.jpg",
+      alt: "Ремонт и покраска фасада здания",
+      title: "Ремонт и покраска фасадов",
       description:
-        "Гонишься за личными рекордами или просто встречаешь рассвет на бегу — наше сообщество принимает каждого. От спринтеров до любителей медленного бега, от трейлраннеров до звезд стадиона — здесь найдется место для тебя. Вопрос один: чего ты ждешь?",
+        "Восстановление штукатурки, герметизация межпанельных швов, покраска и утепление фасадов. Устраняем трещины, протечки и разрушения на любой высоте. Гарантия на все работы. Стоимость от 500 ₽/м².",
       layout: "right" as const,
     },
     {
       id: 3,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1FdGyjVpWQANGzsDWpoPIvF5SVI2za.png",
-      alt: "Бегун в динамике, демонстрирующий силу и грацию",
-      title: "Стань частью движения",
+      image: "https://cdn.poehali.dev/projects/bb3ad2f0-a972-414c-8c08-5d3f3419bb91/files/322eef43-b864-490a-8dd4-89924c992729.jpg",
+      alt: "Монтажные работы на высоте",
+      title: "Монтаж и высотный сервис",
       description:
-        "Бег — это не только километры, это моменты. Утренние разговоры, общие трудности, коллективные победы. В Stride Collective ты вступаешь не просто в группу — ты становишься частью семьи. Зашнуруй кроссовки, выйди на старт и открой, на что ты способен. Серьезно, чего ты ждешь?",
+        "Установка рекламных конструкций, кондиционеров, водостоков и снегозадержателей. Демонтаж, чистка кровли от снега и наледи, спил деревьев. Работаем с частными и коммерческими объектами. Расчёт по объекту.",
       layout: "left" as const,
     },
   ]
@@ -51,7 +51,7 @@ export default function Index() {
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-6xl font-black tracking-wider mb-12 text-gray-900">НАША МИССИЯ</h2>
+            <h2 className="text-4xl md:text-6xl font-black tracking-wider mb-12 text-gray-900">О КОМПАНИИ</h2>
             <TextGradientScroll
               text={missionStatement}
               className="text-2xl md:text-3xl lg:text-4xl font-medium leading-relaxed text-gray-800"
@@ -70,9 +70,9 @@ export default function Index() {
         <div className="relative z-10">
           <div className="container mx-auto px-6 mb-16">
             <div className="text-center">
-              <h2 className="text-4xl md:text-6xl font-black tracking-wider mb-6 text-gray-900">МЫ РАДЫ КАЖДОМУ</h2>
+              <h2 className="text-4xl md:text-6xl font-black tracking-wider mb-6 text-gray-900">НАШИ УСЛУГИ</h2>
               <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
-                У каждого бегуна свой путь. Вот лишь несколько историй из нашего открытого сообщества.
+                Выполняем все виды высотных работ с гарантией качества и полным соблюдением техники безопасности.
               </p>
             </div>
           </div>
@@ -95,11 +95,11 @@ export default function Index() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-6xl font-black tracking-wider text-gray-900 mb-6">
-              Что говорят наши{" "}
-              <span className="bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">БЕГУНЫ</span>
+              Нам доверяют{" "}
+              <span className="bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">КЛИЕНТЫ</span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-12">
-              Реальные истории от реальных бегунов, которые нашли свой ритм вместе со Stride Collective.
+              Отзывы строительных компаний, управляющих зданиями и частных заказчиков, для которых мы работали.
             </p>
           </motion.div>
 
@@ -111,8 +111,8 @@ export default function Index() {
       <section id="join" className="relative">
         <SmoothScrollHero
           scrollHeight={2500}
-          desktopImage="/images/runners-motion-blur.png"
-          mobileImage="/images/runners-motion-blur.png"
+          desktopImage="https://cdn.poehali.dev/projects/bb3ad2f0-a972-414c-8c08-5d3f3419bb91/files/d950d254-a189-448a-9010-31fc0729adfe.jpg"
+          mobileImage="https://cdn.poehali.dev/projects/bb3ad2f0-a972-414c-8c08-5d3f3419bb91/files/d950d254-a189-448a-9010-31fc0729adfe.jpg"
           initialClipPercentage={30}
           finalClipPercentage={70}
         />
